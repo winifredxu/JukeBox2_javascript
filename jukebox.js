@@ -27,3 +27,9 @@ var changeDisplay = function() {
 	$('#play_button').attr('disabled', false);
 	$('#play_button').html("To Play");
 };
+
+$(document).on('keypress', function(event) {
+	if (event.which == 32) { //spacebar is 32
+		//Play/Pause the current song.
+	};
+});
